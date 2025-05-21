@@ -57,3 +57,8 @@ resource "aws_lambda_permission" "allow_eventbridge" {
   principal     = "events.amazonaws.com"
   source_arn    = aws_cloudwatch_event_rule.hourly_rule.arn
 }
+
+resource "aws_s3_bucket" "crypto_data_bucket" {
+  bucket = var.s3_bucket_name
+  force_destroy = true
+}
