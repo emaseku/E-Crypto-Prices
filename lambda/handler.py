@@ -9,7 +9,7 @@ BUCKET_NAME = 'emaseku-s3-covid-bucket'  # Change if needed
 def lambda_handler(event, context):
     url = "https://api.coingecko.com/api/v3/simple/price"
     params = {
-        'ids': 'bitcoin,ethereum',
+        'ids': 'bitcoin,ethereum,litecoin,ripple',
         'vs_currencies': 'usd'
     }
     
