@@ -35,23 +35,23 @@ Setup
 
 1. Clone the repo
 
-git clone https://github.com/yourusername/crypto-pipeline.git
-cd crypto-pipeline
+    git clone https://github.com/emaseku/E-Crypto-Prices.git
+    cd crypto-pipeline
 
 2. Configure Terraform variables
 
-Create a terraform.tfvars file and set:
+    Create a terraform.tfvars file and set:
 
-db_username = "your_db_username"          (Optional for future DB use)
-db_password = "your_db_password"          (Optional for future DB use)
-region      = "us-east-1"                  Your AWS region
+    db_username = "your_db_username"          (Optional for future DB use)
+    db_password = "your_db_password"          (Optional for future DB use)
+    region      = "us-east-1"                  Your AWS region
 
 3. Initialize and apply Terraform
 
-terraform init
-terraform apply
+    terraform init
+    terraform apply
 
-This will provision the AWS resources: Lambda function, S3 bucket, and EventBridge rule.
+    This will provision the AWS resources: Lambda function, S3 bucket, and EventBridge rule.
 
 4. Deploy Lambda function
 
