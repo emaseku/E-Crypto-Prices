@@ -42,10 +42,6 @@ Setup
 
     Create a terraform.tfvars file and set:
 
-    db_username = "your_db_username"          (Optional for future DB use)
-    db_password = "your_db_password"          (Optional for future DB use)
-    region      = "us-east-1"                  Your AWS region
-
 3. Initialize and apply Terraform
 
     terraform init
@@ -55,8 +51,8 @@ Setup
 
 4. Deploy Lambda function
 
-Your GitHub Actions workflow automates this on each push to main branch.
-
+    Your GitHub Actions workflow automates this on each push to main branch.
+    
 ---
 
 Usage
@@ -74,20 +70,10 @@ Project Structure
 
 ---
 
-Future Enhancements
-
-- Store data in a relational or NoSQL database for advanced querying
-- Add alerts for significant price changes
-- Build a dashboard for price visualization
-- Expand to more cryptocurrencies or stock market data
-- Add error handling and retries in Lambda
-
----
-
 License
 
 MIT License
 
 ---
 
-Project link: https://github.com/yourusername/crypto-pipeline
+Project link: https://github.com/emaseku/E-Crypto-Prices
